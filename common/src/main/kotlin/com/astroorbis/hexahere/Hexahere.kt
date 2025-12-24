@@ -17,6 +17,7 @@ object Hexahere {
     fun id(path: String) = ResourceLocation(MODID, path)
 
     fun init() {
+        LOGGER.info("when the HEXA is HERE !!")
         HexahereServerConfig.init()
         initRegistries(
             HexahereActions,

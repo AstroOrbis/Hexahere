@@ -6,15 +6,15 @@ import at.petrak.hexcasting.api.casting.math.HexDir
 import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
 import at.petrak.hexcasting.common.lib.hex.HexActions
-import com.astroorbis.hexahere.casting.actions.spells.OpCongratulate
+import com.astroorbis.hexahere.casting.actions.spells.OpCartesian
+import com.astroorbis.hexahere.casting.actions.spells.OpCartesianII
 
 object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     HexRegistries.ACTION,
     { HexActions.REGISTRY },
 ) {
-    val CONGRATULATE = make("congratulate", HexDir.WEST, "eed", OpCongratulate)
-
-    val GREAT_CONGRATULATE = make("congratulate/great", HexDir.EAST, "qwwqqqwwqwded", OpCongratulate)
+    val CARTESIAN = make("cartesian", HexDir.NORTH_WEST, "wdwdawdew", OpCartesian)
+    val CARTESIANII = make("cartesianII", HexDir.NORTH_WEST, "wdwdawddae", OpCartesianII)
 
     private fun make(name: String, startDir: HexDir, signature: String, action: Action) =
         make(name, startDir, signature) { action }
