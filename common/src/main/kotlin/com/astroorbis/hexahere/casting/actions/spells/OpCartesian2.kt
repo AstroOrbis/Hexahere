@@ -24,6 +24,6 @@ object OpCartesian2 : ConstMediaAction {
             }
         }
 
-        return out
+        return listOf(ListIota(out))
     }
 }
