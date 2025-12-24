@@ -2,18 +2,11 @@
   hexahere: {
     book: {
       patterns: {
-        spells: {
-          dummy_spells: {
-            "": "Dummy Spells",
-            congratulate: "Remove an entity from the stack, then congratulate them.",
-          },
-        },
-        great_spells: {
-          dummy_great_spells: {
-            "": "Dummy Great Spells",
-            "congratulate/great": "Same as $(l:patterns/spells/dummy_spells#hexahere:congratulate)$(action)Congratulate/$, but as a great spell.",
-          },
-        },
+        "": "HH patterns",
+        cartesian: "Return the cartesian product of two lists",
+        cartesian2: "Return the cartesian product of 3 lists",
+        list2vec: "Turns the 3-item list at the top of the stack into a Vector",
+        vec2list: "Turns the Vector at the top of the stack into a 3-item list"
       },
     },
   },
@@ -21,23 +14,17 @@
   hexcasting: {
     action: {
       "hexahere:": {
-        congratulate: "Congratulate Player",
-        "congratulate/great": "Great Congrats!",
-      },
-
-      // use this to add shortened versions of pattern names if the full name won't fit in the ingame book
-      // you don't need to add an entry for every pattern - the above value will be used as a default
-      book: {
-        "hexahere:": {
-          congratulate: "Congratulate",
-        },
+        cartesian: "Cartesian",
+        cartesian2: "Cartesian2",
+        list2vec: "List To Vec3",
+        vec2list: "Vec3 To List"
       },
     },
   },
 
   text: {
     hexahere: {
-      congrats: "Tell %1$s they're doing a good job!",
+      cartesian: "Idk where this goes but I'll figure it out"
     },
 
     "autoconfig.hexahere": {
