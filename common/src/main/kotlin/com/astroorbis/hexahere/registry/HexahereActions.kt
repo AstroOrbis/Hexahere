@@ -8,6 +8,7 @@ import at.petrak.hexcasting.common.lib.HexRegistries
 import at.petrak.hexcasting.common.lib.hex.HexActions
 import com.astroorbis.hexahere.casting.actions.spells.OpCartesian
 import com.astroorbis.hexahere.casting.actions.spells.OpCartesian2
+import com.astroorbis.hexahere.casting.actions.spells.OpVecToList
 
 object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     HexRegistries.ACTION,
@@ -15,6 +16,9 @@ object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
 ) {
     val CARTESIAN = make("cartesian", HexDir.NORTH_WEST, "wdwdawdew", OpCartesian)
     val CARTESIAN2 = make("cartesian2", HexDir.NORTH_WEST, "wdwdawddae", OpCartesian2)
+
+    val VEC2LIST = make("vec2list", HexDir.NORTH_WEST, "waqq", OpVecToList)
+    val LIST2VEC = make("list2vec", HexDir.NORTH_WEST, "wdee", OpVecToList)
 
     private fun make(name: String, startDir: HexDir, signature: String, action: Action) =
         make(name, startDir, signature) { action }
