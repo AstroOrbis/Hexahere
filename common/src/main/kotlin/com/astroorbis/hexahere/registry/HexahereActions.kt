@@ -7,14 +7,14 @@ import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
 import at.petrak.hexcasting.common.lib.hex.HexActions
 import com.astroorbis.hexahere.casting.actions.spells.OpCartesian
-import com.astroorbis.hexahere.casting.actions.spells.OpCartesianII
+import com.astroorbis.hexahere.casting.actions.spells.OpCartesian2
 
 object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     HexRegistries.ACTION,
     { HexActions.REGISTRY },
 ) {
     val CARTESIAN = make("cartesian", HexDir.NORTH_WEST, "wdwdawdew", OpCartesian)
-    val CARTESIANII = make("cartesianII", HexDir.NORTH_WEST, "wdwdawddae", OpCartesianII)
+    val CARTESIAN2 = make("cartesian2", HexDir.NORTH_WEST, "wdwdawddae", OpCartesian2)
 
     private fun make(name: String, startDir: HexDir, signature: String, action: Action) =
         make(name, startDir, signature) { action }
