@@ -28,7 +28,7 @@ object OpListToVec : ConstMediaAction {
         var l = args.getList(0, argc)
         if (l.size() != 3)
             // no clue if this is correct lmfao
-            throw MishapInvalidIota.of(l as Iota, 0, "int.between", 3, 3)
+            throw MishapInvalidIota.of(args[0], 0, "int.between", 3, 3)
 
         val ll: List<Iota> = l.toList()
 
