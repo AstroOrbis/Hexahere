@@ -1,0 +1,1 @@
+magick hexahere.svg -resize 400x400! icon.png
