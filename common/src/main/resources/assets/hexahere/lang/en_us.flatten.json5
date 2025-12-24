@@ -8,6 +8,10 @@
         list2vec: "Turns the 3-item list at the top of the stack into a Vector",
         vec2list: "Turns the Vector at the top of the stack into a 3-item list"
       },
+      consts: {
+        "": "HH Constants",
+        orthovec: "Ortho Vector"
+      }
     },
   },
 
@@ -17,14 +21,15 @@
         cartesian: "Cartesian",
         cartesian2: "Cartesian2",
         list2vec: "List To Vec3",
-        vec2list: "Vec3 To List"
+        vec2list: "Vec3 To List",
+        orthovec: "Ortho Vector"
       },
     },
   },
 
   text: {
     hexahere: {
-      cartesian: "Idk where this goes but I'll figure it out"
+      cartesian: "Idk where this text shows up but I guess I'll figure it out"
     },
 
     "autoconfig.hexahere": {

@@ -20,10 +20,7 @@ object OpListToVec : ConstMediaAction {
     override val argc = 1
 
     override fun execute(args: List<Iota>, env: CastingEnvironment): List<Iota> {
-
         // this is basically just Flock's Disintegration into a Vector Exaltation but whatever
-
-
 
         var l = args.getList(0, argc)
         if (l.size() != 3)

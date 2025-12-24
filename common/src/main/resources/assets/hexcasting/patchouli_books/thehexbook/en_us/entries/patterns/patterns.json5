@@ -18,7 +18,7 @@
       "anchor":"hexahere:cartesian2",
       "input":"list, list, list",
       "output":"list",
-      "text":"hexahere.book.patterns.cartesian"
+      "text":"hexahere.book.patterns.cartesian2"
     },
     {
       "type":"hexcasting:pattern",
