@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hexahere: {
+      title: "Hexahere Book",
+      description: "small utils for hexcasting",
+    },
+  }
+}

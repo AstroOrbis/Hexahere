@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.astroorbis.hexahere.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinDatagenMain"
+  ],
+  "plugin": "com.astroorbis.hexahere.mixin.HexahereMixinConfigPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

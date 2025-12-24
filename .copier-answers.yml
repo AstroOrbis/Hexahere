@@ -1,0 +1,21 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# https://copier.readthedocs.io/en/stable/updating/#never-change-the-answers-file-manually
+_commit: v2.2.3
+_src_path: gh:FallingColors/hexdummy
+advanced: true
+capitalize_platforms: false
+classname: Hexahere
+default_branch: main
+description: small utils for hexcasting
+display_name: Hexahere
+github_repo: Hexahere
+github_user: AstroOrbis
+homepage_url: https://astroorbis.github.io/Hexahere
+java_package: com.astroorbis.hexahere
+kotlin_package: com.astroorbis.hexahere
+mappings_name: Mojmap
+minecraft_version_in_mod_version: true
+mit_license: true
+mod_version: 0.1.0
+modid: hexahere
+sources_url: https://github.com/AstroOrbis/Hexahere
