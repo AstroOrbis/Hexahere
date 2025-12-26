@@ -75,7 +75,7 @@ private fun generateBookSection(patterns: List<PatternInfo>): String {
     return buildString {
         for ((category, entries) in byCategory) {
             append("      ")
-            append(category)
+            append(category.id)
             append(": {\n")
 
             val displayName = entries.firstOrNull()?.category?.displayName?.takeIf { it.isNotBlank() }

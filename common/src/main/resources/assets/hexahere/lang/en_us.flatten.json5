@@ -7,14 +7,14 @@
 {
   hexahere: {
     book: {
-            MATH: {
+            math: {
         "": "HH Math",
         cartesian: "Returns the cartesian product of 2 lists",
         cartesian3: "Returns the cartesian product of 3 lists",
         intrange: "Returns the inclusive range between two integers as a list of floats",
         orthovec: "Returns the vector (-1, 0, 1)",
       },
-      TYPES: {
+      types: {
         "": "HH Types",
         list2vec: "Converts a list of 3 numbers to a vector",
         vec2list: "Converts a vector to a list of 3 numbers",
