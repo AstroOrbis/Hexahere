@@ -1,3 +1,5 @@
+import org.gradle.language.jvm.tasks.ProcessResources
+
 plugins {
     id("hexahere.platform")
 }
@@ -91,5 +93,16 @@ dependencies {
 tasks {
     shadowJar {
         exclude("fabric.mod.json")
+    }
+
+    // ensure resources are generated before processing them
+    named<ProcessResources>("processResources") {
+        dependsOn(":common:syncGeneratedResources")
+        duplicatesStrategy = DuplicatesStrategy.WARN
+    }
+
+    withType<org.gradle.jvm.tasks.Jar> {
+        dependsOn(":common:syncGeneratedResources")
+        duplicatesStrategy = DuplicatesStrategy.WARN
     }
 }

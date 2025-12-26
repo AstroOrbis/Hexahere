@@ -11,4 +11,4 @@ pluginManagement {
 }
 
 rootProject.name = "Hexahere"
-include("common", "fabric", "forge")
+include("common", "fabric", "forge", "processor", "annotations")

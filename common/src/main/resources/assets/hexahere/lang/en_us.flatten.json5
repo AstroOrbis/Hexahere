@@ -1,28 +1,38 @@
+
+// Autogenned by HexaHere's symbol processor for no reason other than it's mildly more convenient 
+// also it keeps docs synced lol
+// don't edit ig?
+
+
 {
   hexahere: {
     book: {
-      types: {
-        "": "HH types",
-        list2vec: "Turns the 3-item list at the top of the stack into a Vector",
-        vec2list: "Turns the Vector at the top of the stack into a 3-item list"
-      },
-      math: {
+            MATH: {
         "": "HH Math",
-        orthovec: "Ortho Vector",
-        cartesian: "Return the cartesian product of two lists",
-        cartesian3: "Return the cartesian product of 3 lists"
-      }
+        cartesian: "Returns the cartesian product of 2 lists",
+        cartesian3: "Returns the cartesian product of 3 lists",
+        intrange: "Returns the inclusive range between two integers as a list of floats",
+        orthovec: "Returns the vector (-1, 0, 1)",
+      },
+      TYPES: {
+        "": "HH Types",
+        list2vec: "Converts a list of 3 numbers to a vector",
+        vec2list: "Converts a vector to a list of 3 numbers",
+      },
+
     },
   },
 
   hexcasting: {
     action: {
       "hexahere:": {
-        cartesian: "Cartesian",
-        cartesian3: "Cartesian3",
-        list2vec: "List To Vec3",
-        vec2list: "Vec3 To List",
-        orthovec: "Ortho Vector"
+                cartesian: "Cartesian",
+        cartesian3: "Cartesian (3)",
+        intrange: "Range",
+        list2vec: "List to Vector",
+        orthovec: "Orthogonal Vector",
+        vec2list: "Vector to List",
+
       },
     },
   },

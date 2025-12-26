@@ -7,8 +7,11 @@ import at.petrak.hexcasting.api.casting.math.HexDir
 import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
 import at.petrak.hexcasting.common.lib.hex.HexActions
+import com.astroorbis.hexahere.annotations.HexPattern as HexPatternAnnotation
+import com.astroorbis.hexahere.annotations.HexPatternCategory
 import com.astroorbis.hexahere.casting.actions.spells.OpCartesian
 import com.astroorbis.hexahere.casting.actions.spells.OpCartesian3
+import com.astroorbis.hexahere.casting.actions.spells.OpIntRange
 import com.astroorbis.hexahere.casting.actions.spells.OpListToVec
 import com.astroorbis.hexahere.casting.actions.spells.OpVecToList
 import net.minecraft.world.phys.Vec3
@@ -18,6 +21,14 @@ object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     { HexActions.REGISTRY },
 ) {
     // Constants
+    @HexPatternAnnotation(
+        id = "orthovec",
+        name = "Orthogonal Vector",
+        description = "Returns the vector (-1, 0, 1)",
+        category = HexPatternCategory.MATH,
+        input = "",
+        output = "vec"
+    )
     val OTRHOVEC = make("orthovec", HexDir.NORTH_WEST, "qdeddw", Action.makeConstantOp(Vec3Iota(Vec3(-1.0, 0.0, 1.0))))
 
     // Patterns
@@ -26,6 +37,9 @@ object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
 
     val VEC2LIST = make("vec2list", HexDir.NORTH_WEST, "waqq", OpVecToList)
     val LIST2VEC = make("list2vec", HexDir.NORTH_WEST, "wdee", OpListToVec)
+
+    val INTRANGE = make("intrange", HexDir.NORTH_WEST, "aqadaqa", OpIntRange)
+
 
     private fun make(name: String, startDir: HexDir, signature: String, action: Action) =
         make(name, startDir, signature) { action }

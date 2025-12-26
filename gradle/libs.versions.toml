@@ -6,6 +6,7 @@
 java = "17" # must be an integer
 
 kotlin = "1.9.22"
+ksp = "1.9.22-1.0.18"
 kotlin-fabric = "1.10.18+kotlin.1.9.22"
 kotlin-forge = "4.10.0"
 
@@ -62,6 +63,8 @@ kotlin-stdlib = { module="org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref=
 kotlin-fabric = { module="net.fabricmc:fabric-language-kotlin", version.ref="kotlin-fabric" }
 kotlin-forge  = { module="thedarkcolour:kotlinforforge", version.ref="kotlin-forge" }
 
+ksp-api = { module="com.google.devtools.ksp:symbol-processing-api", version.ref="ksp" }
+
 minecraft = { module="com.mojang:minecraft", version.ref="minecraft" }
 
 parchment = { module="org.parchmentmc.data:parchment-1.20.1", version.ref="parchment" }
@@ -116,6 +119,7 @@ serializationHooks = { module="io.github.tropheusj:serialization-hooks", version
 
 [plugins]
 kotlin-jvm = { id="org.jetbrains.kotlin.jvm", version.ref="kotlin" }
+ksp = { id="com.google.devtools.ksp", version.ref="ksp" }
 
 architectury      = { id="architectury-plugin", version.ref="architectury-plugin" }
 architectury-loom = { id="dev.architectury.loom", version.ref="architectury-loom" }

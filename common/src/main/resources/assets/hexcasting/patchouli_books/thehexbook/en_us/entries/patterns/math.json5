@@ -1,3 +1,8 @@
+
+// Autogenned by HexaHere's symbol processor for no reason other than it's mildly more convenient 
+// also it keeps docs synced lol
+// don't edit ig?
+
 {
   "name":"hexahere.book.math",
   "category":"hexcasting:patterns/spells",
@@ -6,19 +11,11 @@
   "pages":[
     {
       "type":"hexcasting:pattern",
-      "op_id":"hexahere:orthovec",
-      "anchor":"hexahere:orthovec",
-      "input":"",
-      "output":"vec",
-      "text":"hexahere.book.consts.orthovec"
-    },
-    {
-      "type":"hexcasting:pattern",
       "op_id":"hexahere:cartesian",
       "anchor":"hexahere:cartesian",
       "input":"list, list",
       "output":"list",
-      "text":"hexahere.book.math.cartesian"
+      "text":"hexahere.book.MATH.cartesian"
     },
     {
       "type":"hexcasting:pattern",
@@ -26,7 +23,23 @@
       "anchor":"hexahere:cartesian3",
       "input":"list, list, list",
       "output":"list",
-      "text":"hexahere.book.math.cartesian3"
+      "text":"hexahere.book.MATH.cartesian3"
+    },
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:intrange",
+      "anchor":"hexahere:intrange",
+      "input":"num, num",
+      "output":"list",
+      "text":"hexahere.book.MATH.intrange"
+    },
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:orthovec",
+      "anchor":"hexahere:orthovec",
+      "input":"",
+      "output":"vec",
+      "text":"hexahere.book.MATH.orthovec"
     }
   ]
 }

@@ -1,3 +1,5 @@
+import org.gradle.language.jvm.tasks.ProcessResources
+
 plugins {
     id("hexahere.platform")
 }
@@ -81,4 +83,15 @@ dependencies {
         exclude(group = "net.fabricmc.fabric-api")
     }
     modImplementation(libs.modMenu)
+}
+
+// ensure resources are generated before processing them
+tasks.named<ProcessResources>("processResources") {
+    dependsOn(":common:syncGeneratedResources")
+    duplicatesStrategy = DuplicatesStrategy.WARN
+}
+
+tasks.withType<org.gradle.jvm.tasks.Jar> {
+    dependsOn(":common:syncGeneratedResources")
+    duplicatesStrategy = DuplicatesStrategy.WARN
 }

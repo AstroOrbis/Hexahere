@@ -1,7 +1,12 @@
+
+// Autogenned by HexaHere's symbol processor for no reason other than it's mildly more convenient 
+// also it keeps docs synced lol
+// don't edit ig?
+
 {
   "name":"hexahere.book.types",
   "category":"hexcasting:patterns/spells",
-  "icon":"minecraft:spruce_sign",
+  "icon":"minecraft:bedrock",
   "advancement":"hexcasting:root",
   "pages":[
     {
@@ -10,7 +15,7 @@
       "anchor":"hexahere:list2vec",
       "input":"list",
       "output":"vec",
-      "text":"hexahere.book.types.list2vec"
+      "text":"hexahere.book.TYPES.list2vec"
     },
     {
       "type":"hexcasting:pattern",
@@ -18,7 +23,7 @@
       "anchor":"hexahere:vec2list",
       "input":"vec",
       "output":"list",
-      "text":"hexahere.book.types.vec2list"
+      "text":"hexahere.book.TYPES.vec2list"
     }
   ]
 }
