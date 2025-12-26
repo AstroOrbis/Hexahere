@@ -1,0 +1,32 @@
+{
+  "name":"hexahere.book.math",
+  "category":"hexcasting:patterns/spells",
+  "icon":"minecraft:bedrock",
+  "advancement":"hexcasting:root",
+  "pages":[
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:orthovec",
+      "anchor":"hexahere:orthovec",
+      "input":"",
+      "output":"vec",
+      "text":"hexahere.book.consts.orthovec"
+    },
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:cartesian",
+      "anchor":"hexahere:cartesian",
+      "input":"list, list",
+      "output":"list",
+      "text":"hexahere.book.math.cartesian"
+    },
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:cartesian3",
+      "anchor":"hexahere:cartesian3",
+      "input":"list, list, list",
+      "output":"list",
+      "text":"hexahere.book.math.cartesian3"
+    }
+  ]
+}

@@ -7,14 +7,14 @@ import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.iota.ListIota
 import com.astroorbis.hexahere.utils.iotaListCartesian
 
-
-object OpCartesian : ConstMediaAction {
-    override val argc = 2
+object OpCartesian3 : ConstMediaAction {
+    override val argc = 3
 
     override fun execute(args: List<Iota>, env: CastingEnvironment): List<Iota> {
         val A = args.getList(0, argc).toList()
         val B = args.getList(1, argc).toList()
+        val C = args.getList(2, argc).toList()
 
-        return listOf(ListIota(iotaListCartesian(A, B)))
+        return listOf(ListIota(iotaListCartesian(A, B, C)))
     }
 }

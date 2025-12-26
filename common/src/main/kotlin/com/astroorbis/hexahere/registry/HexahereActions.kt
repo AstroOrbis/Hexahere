@@ -8,7 +8,7 @@ import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
 import at.petrak.hexcasting.common.lib.hex.HexActions
 import com.astroorbis.hexahere.casting.actions.spells.OpCartesian
-import com.astroorbis.hexahere.casting.actions.spells.OpCartesian2
+import com.astroorbis.hexahere.casting.actions.spells.OpCartesian3
 import com.astroorbis.hexahere.casting.actions.spells.OpListToVec
 import com.astroorbis.hexahere.casting.actions.spells.OpVecToList
 import net.minecraft.world.phys.Vec3
@@ -20,10 +20,9 @@ object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     // Constants
     val OTRHOVEC = make("orthovec", HexDir.NORTH_WEST, "qdeddw", Action.makeConstantOp(Vec3Iota(Vec3(-1.0, 0.0, 1.0))))
 
-
     // Patterns
     val CARTESIAN = make("cartesian", HexDir.NORTH_WEST, "wdwdawdew", OpCartesian)
-    val CARTESIAN2 = make("cartesian2", HexDir.NORTH_WEST, "wdwdawddae", OpCartesian2)
+    val CARTESIAN3 = make("cartesian3", HexDir.NORTH_WEST, "wdwdawddae", OpCartesian3)
 
     val VEC2LIST = make("vec2list", HexDir.NORTH_WEST, "waqq", OpVecToList)
     val LIST2VEC = make("list2vec", HexDir.NORTH_WEST, "wdee", OpListToVec)

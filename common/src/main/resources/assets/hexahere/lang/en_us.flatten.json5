@@ -1,16 +1,16 @@
 {
   hexahere: {
     book: {
-      patterns: {
-        "": "HH patterns",
-        cartesian: "Return the cartesian product of two lists",
-        cartesian2: "Return the cartesian product of 3 lists",
+      types: {
+        "": "HH types",
         list2vec: "Turns the 3-item list at the top of the stack into a Vector",
         vec2list: "Turns the Vector at the top of the stack into a 3-item list"
       },
-      consts: {
-        "": "HH Constants",
-        orthovec: "Ortho Vector"
+      math: {
+        "": "HH Math",
+        orthovec: "Ortho Vector",
+        cartesian: "Return the cartesian product of two lists",
+        cartesian3: "Return the cartesian product of 3 lists"
       }
     },
   },
@@ -19,7 +19,7 @@
     action: {
       "hexahere:": {
         cartesian: "Cartesian",
-        cartesian2: "Cartesian2",
+        cartesian3: "Cartesian3",
         list2vec: "List To Vec3",
         vec2list: "Vec3 To List",
         orthovec: "Ortho Vector"

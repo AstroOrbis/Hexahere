@@ -1,0 +1,24 @@
+{
+  "name":"hexahere.book.types",
+  "category":"hexcasting:patterns/spells",
+  "icon":"minecraft:spruce_sign",
+  "advancement":"hexcasting:root",
+  "pages":[
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:list2vec",
+      "anchor":"hexahere:list2vec",
+      "input":"list",
+      "output":"vec",
+      "text":"hexahere.book.types.list2vec"
+    },
+    {
+      "type":"hexcasting:pattern",
+      "op_id":"hexahere:vec2list",
+      "anchor":"hexahere:vec2list",
+      "input":"vec",
+      "output":"list",
+      "text":"hexahere.book.types.vec2list"
+    }
+  ]
+}
