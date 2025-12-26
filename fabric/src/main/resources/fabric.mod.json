@@ -15,26 +15,36 @@
   "icon": "assets/hexahere/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [{
-      "adapter": "kotlin",
-      "value": "com.astroorbis.hexahere.fabric.FabricHexahere"
-    }],
-    "client": [{
-      "adapter": "kotlin",
-      "value": "com.astroorbis.hexahere.fabric.FabricHexahereClient"
-    }],
-    "server": [{
-      "adapter": "kotlin",
-      "value": "com.astroorbis.hexahere.fabric.FabricHexahereServer"
-    }],
-    "fabric-datagen": [{
-      "adapter": "kotlin",
-      "value": "com.astroorbis.hexahere.fabric.datagen.FabricHexahereDatagen"
-    }],
-    "modmenu": [{
-      "adapter": "kotlin",
-      "value": "com.astroorbis.hexahere.fabric.FabricHexahereModMenu"
-    }]
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.astroorbis.hexahere.fabric.FabricHexahere"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.astroorbis.hexahere.fabric.FabricHexahereClient"
+      }
+    ],
+    "server": [
+      {
+        "adapter": "kotlin",
+        "value": "com.astroorbis.hexahere.fabric.FabricHexahereServer"
+      }
+    ],
+    "fabric-datagen": [
+      {
+        "adapter": "kotlin",
+        "value": "com.astroorbis.hexahere.fabric.datagen.FabricHexahereDatagen"
+      }
+    ],
+    "modmenu": [
+      {
+        "adapter": "kotlin",
+        "value": "com.astroorbis.hexahere.fabric.FabricHexahereModMenu"
+      }
+    ]
   },
   "mixins": [
     "hexahere-common.mixins.json",

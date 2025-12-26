@@ -7,14 +7,10 @@ import at.petrak.hexcasting.api.casting.math.HexDir
 import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
 import at.petrak.hexcasting.common.lib.hex.HexActions
-import com.astroorbis.hexahere.annotations.HexPattern as HexPatternAnnotation
 import com.astroorbis.hexahere.annotations.HexPatternCategory
-import com.astroorbis.hexahere.casting.actions.spells.OpCartesian
-import com.astroorbis.hexahere.casting.actions.spells.OpCartesian3
-import com.astroorbis.hexahere.casting.actions.spells.OpIntRange
-import com.astroorbis.hexahere.casting.actions.spells.OpListToVec
-import com.astroorbis.hexahere.casting.actions.spells.OpVecToList
+import com.astroorbis.hexahere.casting.actions.spells.*
 import net.minecraft.world.phys.Vec3
+import com.astroorbis.hexahere.annotations.HexPattern as HexPatternAnnotation
 
 object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     HexRegistries.ACTION,

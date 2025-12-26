@@ -1,9 +1,7 @@
 package com.astroorbis.hexahere.datagen
 
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry
-import at.petrak.hexcasting.api.mod.HexTags
 import at.petrak.hexcasting.common.lib.HexRegistries
-import com.astroorbis.hexahere.registry.HexahereActions
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.TagsProvider

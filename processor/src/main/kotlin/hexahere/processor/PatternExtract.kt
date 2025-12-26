@@ -17,7 +17,7 @@ data class PatternInfo(
 fun KSClassDeclaration.toPatternInfo(): PatternInfo? {
     val annotation = annotations.find {
         it.annotationType.resolve().declaration.qualifiedName?.asString() ==
-            "com.astroorbis.hexahere.annotations.HexPattern"
+                "com.astroorbis.hexahere.annotations.HexPattern"
     } ?: return null
 
     val (categoryId, categoryDisplayName) = annotation.getCategoryInfo()
@@ -38,7 +38,7 @@ fun KSClassDeclaration.toPatternInfo(): PatternInfo? {
 fun KSPropertyDeclaration.toPatternInfo(): PatternInfo? {
     val annotation = annotations.find {
         it.annotationType.resolve().declaration.qualifiedName?.asString() ==
-            "com.astroorbis.hexahere.annotations.HexPattern"
+                "com.astroorbis.hexahere.annotations.HexPattern"
     } ?: return null
 
     val (categoryId, categoryDisplayName) = annotation.getCategoryInfo()

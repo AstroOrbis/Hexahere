@@ -2,8 +2,8 @@
 
 package com.astroorbis.hexahere
 
-import dev.architectury.injectables.annotations.ExpectPlatform
 import com.astroorbis.hexahere.registry.HexahereRegistrar
+import dev.architectury.injectables.annotations.ExpectPlatform
 
 fun initRegistries(vararg registries: HexahereRegistrar<*>) {
     for (registry in registries) {

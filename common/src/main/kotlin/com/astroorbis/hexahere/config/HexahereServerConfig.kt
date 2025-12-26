@@ -1,5 +1,7 @@
 package com.astroorbis.hexahere.config
 
+import com.astroorbis.hexahere.Hexahere
+import com.astroorbis.hexahere.networking.msg.MsgSyncConfigS2C
 import dev.architectury.event.events.common.PlayerEvent
 import me.shedaniel.autoconfig.AutoConfig
 import me.shedaniel.autoconfig.ConfigData
@@ -13,8 +15,6 @@ import me.shedaniel.autoconfig.serializer.PartitioningSerializer.GlobalData
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer
 import net.minecraft.network.FriendlyByteBuf
 import net.minecraft.world.InteractionResult
-import com.astroorbis.hexahere.Hexahere
-import com.astroorbis.hexahere.networking.msg.MsgSyncConfigS2C
 
 object HexahereServerConfig {
     @JvmStatic

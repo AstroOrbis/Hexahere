@@ -130,13 +130,13 @@ jobs:
           for url in ${{ matrix.dependencies }}; do
             wget --directory-prefix=run/mods/ "$url"
           done
-      
+
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: mod-build
           path: build/ciArtifacts/
-      
+
       - name: Prepare mod jar
         run: |
           cp build/ciArtifacts/*${{ matrix.modloader }}*.jar run/mods
@@ -154,7 +154,7 @@ jobs:
           regex: '.*${{ matrix.modloader }}.*'
           fabric-api: ${{ matrix.fabric-api }}
           mc-runtime-test: ${{ matrix.mc-runtime-test }}
-      
+
       - name: Run MC test server
         if: matrix.env == 'server'
         timeout-minutes: 10  # see above

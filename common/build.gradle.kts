@@ -1,5 +1,3 @@
-import org.gradle.language.jvm.tasks.ProcessResources
-
 plugins {
     id("hexahere.minecraft")
     kotlin("jvm")
@@ -64,7 +62,8 @@ val syncGeneratedLang by tasks.registering(Sync::class) {
 
 val syncGeneratedPatchouliPatterns by tasks.registering(Sync::class) {
     group = "build"
-    description = "Copies KSP-generated Patchouli pattern entries into common/src/main/resources/assets/hexcasting/.../patterns"
+    description =
+        "Copies KSP-generated Patchouli pattern entries into common/src/main/resources/assets/hexcasting/.../patterns"
 
     dependsOn(tasks.named("kspKotlin"))
 

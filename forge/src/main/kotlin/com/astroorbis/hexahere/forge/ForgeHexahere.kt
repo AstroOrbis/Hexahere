@@ -1,8 +1,8 @@
 package com.astroorbis.hexahere.forge
 
-import dev.architectury.platform.forge.EventBuses
 import com.astroorbis.hexahere.Hexahere
 import com.astroorbis.hexahere.forge.datagen.ForgeHexahereDatagen
+import dev.architectury.platform.forge.EventBuses
 import net.minecraftforge.fml.common.Mod
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 

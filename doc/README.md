@@ -6,11 +6,13 @@ small utils for hexcasting
 
 ## Version scheme
 
-We use [hatch-gradle-version](https://pypi.org/project/hatch-gradle-version) to generate the version number based on whichever mod version the docgen was built with.
+We use [hatch-gradle-version](https://pypi.org/project/hatch-gradle-version) to generate the version number based on
+whichever mod version the docgen was built with.
 
 The version is in this format: `mod-version.python-version.mod-pre.python-dev.python-post`
 
 For example:
+
 * Mod version: `0.11.1-7`
 * Python package version: `1.0.dev0`
 * Full version: `0.11.1.1.0rc7.dev0`

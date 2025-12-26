@@ -4,7 +4,7 @@ enum class HexPatternCategory(
     val id: String,
     val displayName: String,
 ) {
-    MISC("misc","HH Misc"),
+    MISC("misc", "HH Misc"),
     MATH("math", "HH Math"),
     TYPES("types", "HH Types"),
 }

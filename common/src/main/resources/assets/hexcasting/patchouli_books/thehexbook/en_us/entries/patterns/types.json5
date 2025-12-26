@@ -15,7 +15,7 @@
       "anchor":"hexahere:list2vec",
       "input":"list",
       "output":"vec",
-      "text":"hexahere.book.TYPES.list2vec"
+      "text":"hexahere.book.types.list2vec"
     },
     {
       "type":"hexcasting:pattern",
@@ -23,7 +23,7 @@
       "anchor":"hexahere:vec2list",
       "input":"vec",
       "output":"list",
-      "text":"hexahere.book.TYPES.vec2list"
+      "text":"hexahere.book.types.vec2list"
     }
   ]
 }

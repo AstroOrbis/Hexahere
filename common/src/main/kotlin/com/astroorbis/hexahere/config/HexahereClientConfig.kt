@@ -1,5 +1,6 @@
 package com.astroorbis.hexahere.config
 
+import com.astroorbis.hexahere.Hexahere
 import dev.architectury.event.events.client.ClientPlayerEvent
 import me.shedaniel.autoconfig.AutoConfig
 import me.shedaniel.autoconfig.ConfigData
@@ -12,7 +13,6 @@ import me.shedaniel.autoconfig.serializer.PartitioningSerializer
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer.GlobalData
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer
 import net.minecraft.world.InteractionResult
-import com.astroorbis.hexahere.Hexahere
 
 object HexahereClientConfig {
     @JvmStatic

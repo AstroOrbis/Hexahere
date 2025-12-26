@@ -1,7 +1,7 @@
 package com.astroorbis.hexahere.registry
 
-import dev.architectury.platform.Platform
 import com.astroorbis.hexahere.Hexahere
+import dev.architectury.platform.Platform
 import net.fabricmc.api.EnvType
 import net.minecraft.core.Registry
 import net.minecraft.resources.ResourceKey

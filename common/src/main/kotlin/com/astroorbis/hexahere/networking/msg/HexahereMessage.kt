@@ -1,11 +1,11 @@
 package com.astroorbis.hexahere.networking.msg
 
-import dev.architectury.networking.NetworkChannel
-import dev.architectury.networking.NetworkManager.PacketContext
 import com.astroorbis.hexahere.Hexahere
 import com.astroorbis.hexahere.networking.HexahereNetworking
 import com.astroorbis.hexahere.networking.handler.applyOnClient
 import com.astroorbis.hexahere.networking.handler.applyOnServer
+import dev.architectury.networking.NetworkChannel
+import dev.architectury.networking.NetworkManager.PacketContext
 import net.fabricmc.api.EnvType
 import net.minecraft.network.FriendlyByteBuf
 import net.minecraft.server.level.ServerPlayer
@@ -46,6 +46,7 @@ sealed interface HexahereMessageCompanion<T : HexahereMessage> {
                     else -> Hexahere.LOGGER.warn("Message not handled on server: {}", msg::class)
                 }
             }
+
             EnvType.CLIENT -> {
                 Hexahere.LOGGER.debug("Client received packet: {}", this)
                 when (msg) {

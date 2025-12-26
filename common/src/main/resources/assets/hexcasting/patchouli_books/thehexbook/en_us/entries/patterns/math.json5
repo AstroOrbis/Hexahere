@@ -15,7 +15,7 @@
       "anchor":"hexahere:cartesian",
       "input":"list, list",
       "output":"list",
-      "text":"hexahere.book.MATH.cartesian"
+      "text":"hexahere.book.math.cartesian"
     },
     {
       "type":"hexcasting:pattern",
@@ -23,7 +23,7 @@
       "anchor":"hexahere:cartesian3",
       "input":"list, list, list",
       "output":"list",
-      "text":"hexahere.book.MATH.cartesian3"
+      "text":"hexahere.book.math.cartesian3"
     },
     {
       "type":"hexcasting:pattern",
@@ -31,7 +31,7 @@
       "anchor":"hexahere:intrange",
       "input":"num, num",
       "output":"list",
-      "text":"hexahere.book.MATH.intrange"
+      "text":"hexahere.book.math.intrange"
     },
     {
       "type":"hexcasting:pattern",
@@ -39,7 +39,7 @@
       "anchor":"hexahere:orthovec",
       "input":"",
       "output":"vec",
-      "text":"hexahere.book.MATH.orthovec"
+      "text":"hexahere.book.math.orthovec"
     }
   ]
 }

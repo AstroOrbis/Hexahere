@@ -1,7 +1,8 @@
 package hexahere.processor
 
 import com.astroorbis.hexahere.annotations.HexPatternCategory
-import com.google.devtools.ksp.processing.*
+import com.google.devtools.ksp.processing.CodeGenerator
+import com.google.devtools.ksp.processing.Dependencies
 
 const val genned_header = """
 // Autogenned by HexaHere's symbol processor for no reason other than it's mildly more convenient 
@@ -42,7 +43,7 @@ fun generatePatchouli(
             w.write("      \"anchor\":\"hexahere:${p.id}\",\n")
             w.write("      \"input\":\"${p.input}\",\n")
             w.write("      \"output\":\"${p.output}\",\n")
-            w.write("      \"text\":\"hexahere.book.$category.${p.id}\"\n")
+            w.write("      \"text\":\"hexahere.book.${category.id}.${p.id}\"\n")
             w.write("    }")
             if (i != entries.lastIndex) w.write(",")
             w.write("\n")
@@ -123,7 +124,8 @@ fun generateLang(
     )
 
     file.writer().use { w ->
-        w.write(genned_header + """
+        w.write(
+            genned_header + """
 {
   hexahere: {
     book: {
@@ -170,6 +172,8 @@ fun generateLang(
     },
   },
 }
-""".replace("HEXAHERE_PROCESSOR_BOOK", generateBookSection(patterns)).replace("HEXAHERE_PROCESSOR_ACTIONS", generateActionNamesSection(patterns)))
+""".replace("HEXAHERE_PROCESSOR_BOOK", generateBookSection(patterns))
+                .replace("HEXAHERE_PROCESSOR_ACTIONS", generateActionNamesSection(patterns))
+        )
     }
 }
