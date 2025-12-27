@@ -20,7 +20,7 @@ fun KSClassDeclaration.toPatternInfo(): PatternInfo? {
                 "com.astroorbis.hexahere.annotations.HexPattern"
     } ?: return null
 
-    val (categoryId, categoryDisplayName) = annotation.getCategoryInfo()
+    val (categoryId, _) = annotation.getCategoryInfo()
 
     return PatternInfo(
         id = annotation.getArgument("id"),
@@ -41,7 +41,7 @@ fun KSPropertyDeclaration.toPatternInfo(): PatternInfo? {
                 "com.astroorbis.hexahere.annotations.HexPattern"
     } ?: return null
 
-    val (categoryId, categoryDisplayName) = annotation.getCategoryInfo()
+    val (categoryId, _) = annotation.getCategoryInfo()
 
     return PatternInfo(
         id = annotation.getArgument("id"),

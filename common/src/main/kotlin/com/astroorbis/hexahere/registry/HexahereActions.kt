@@ -35,6 +35,7 @@ object HexahereActions : HexahereRegistrar<ActionRegistryEntry>(
     val LIST2VEC = make("list2vec", HexDir.NORTH_WEST, "wdee", OpListToVec)
 
     val INTRANGE = make("intrange", HexDir.NORTH_WEST, "aqadaqa", OpIntRange)
+    val ZERORANGE = make("zerorange", HexDir.NORTH_WEST, "dedaded", OpZeroRange)
 
 
     private fun make(name: String, startDir: HexDir, signature: String, action: Action) =

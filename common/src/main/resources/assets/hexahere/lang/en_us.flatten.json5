@@ -13,6 +13,7 @@
         cartesian3: "Returns the cartesian product of 3 lists",
         intrange: "Returns the inclusive range between two integers as a list of floats",
         orthovec: "Returns the vector (-1, 0, 1)",
+        zerorange: "Returns the inclusive range between 0 and the provided integer.",
       },
       types: {
         "": "HH Types",
@@ -32,6 +33,7 @@
         list2vec: "List to Vector",
         orthovec: "Orthogonal Vector",
         vec2list: "Vector to List",
+        zerorange: "Range From Zero",
 
       },
     },
